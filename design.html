@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechSphere — Precision Hardware for the Next Era</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background Video Stage -->
+  <div class="stage">
+    <div class="video-plate">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260808_112712_da9d53df-6d27-4b12-bdf6-aa9dc2622bdf.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+  </div>
+
+  <!-- Primary Application Wrapper -->
+  <div id="app">
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        
+        <!-- Brand Identity -->
+        <a href="#hero" class="brand-logo" aria-label="TechSphere Home">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L2 9L16 16L30 9L16 2Z" fill="url(#logo-grad-1)" />
+            <path d="M2 23L16 30L30 23V18L16 25L2 18V23Z" fill="url(#logo-grad-2)" />
+            <path d="M2 16L16 23L30 16V11L16 18L2 11V16Z" fill="#FFFFFF" fill-opacity="0.6" />
+            <defs>
+              <linearGradient id="logo-grad-1" x1="2" y1="2" x2="30" y2="16" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF" />
+                <stop offset="1" stop-color="#808080" />
+              </linearGradient>
+              <linearGradient id="logo-grad-2" x1="2" y1="18" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A6A6A6" />
+                <stop offset="1" stop-color="#404040" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">TECHSPHERE</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link active">Overview</a>
+          <a href="#vision" class="nav-link">Story</a>
+          <a href="#products" class="nav-link">Catalog</a>
+          <a href="#ecosystem" class="nav-link">Ecosystem</a>
+          <a href="#specs" class="nav-link">Specs</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <button class="cart-trigger" id="cart-trigger" aria-label="Open Shopping Cart">
+            <span class="cart-text">Bag</span>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </button>
+          
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer-content">
+        <nav class="drawer-links">
+          <a href="#hero" class="drawer-link">Overview</a>
+          <a href="#vision" class="drawer-link">Story</a>
+          <a href="#products" class="drawer-link">Catalog</a>
+          <a href="#features" class="drawer-link">Innovations</a>
+          <a href="#ecosystem" class="drawer-link">Ecosystem</a>
+          <a href="#specs" class="drawer-link">Specs</a>
+          <a href="#faq" class="drawer-link">FAQ</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Content Stage -->
+    <main>
+
+      <!-- 1. HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <div class="hero-container">
+          <div class="hero-badge">Architecting Layer 01</div>
+          <h1 class="hero-title">
+            <span>Spatial Computing.</span>
+            <span class="text-gradient">Engineered to Perfection.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Next-gen neural processors, high-fidelity tactile hardware, and seamless ecosystem synchronization.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-pill-primary">Explore Products</a>
+            <a href="#vision" class="btn btn-ghost">Discover our Vision &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. BRAND VISION SECTION -->
+      <section class="vision-section" id="vision">
+        <div class="section-container split-layout">
+          <div class="split-content">
+            <span class="section-tag">Our Vision</span>
+            <h2 class="section-title">Beyond the Interface.</h2>
+            <p class="section-text">
+              We believe technology should dissolve into the background. TechSphere was founded on a singular principle: computing should map to human intuition, not the other way around. By merging advanced neuro-acoustics with spatial computing, we are building the bridge between thought and action.
+            </p>
+            <div class="vision-stats">
+              <div class="stat-item">
+                <span class="stat-num text-gradient">30+</span>
+                <span class="stat-label">Global Patents</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num text-gradient">0.4ms</span>
+                <span class="stat-label">Neural Latency</span>
+              </div>
+            </div>
+          </div>
+          <div class="split-visual">
+            <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&w=800&q=80" alt="Abstract rendering of spatial computing technology" class="rounded-image" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. INTERACTIVE PRODUCT CATALOG -->
+      <section class="products-section" id="products">
+        <div class="section-container">
+          <div class="section-header">
+            <div>
+              <span class="section-tag">Flagship Hardware</span>
+              <h2 class="section-title">Engineered Lineup</h2>
+            </div>
+            
+            <div class="filter-tabs" id="filter-tabs">
+              <button class="tab-btn active" data-category="all">All Systems</button>
+              <button class="tab-btn" data-category="audio">Neural Audio</button>
+              <button class="tab-btn" data-category="wearables">Spatial Optics</button>
+              <button class="tab-btn" data-category="computing">Compute Core</button>
+            </div>
+          </div>
+
+          <!-- Product Grid Dynamic Target -->
+          <div class="product-grid" id="product-grid">
+            <!-- Dynamically Rendered by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CORE FEATURES SECTION -->
+      <section class="features-section" id="features">
+        <div class="section-container">
+          <div class="text-center mb-48">
+            <span class="section-tag">The Architecture</span>
+            <h2 class="section-title">Core Innovations</h2>
+          </div>
+          
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3 class="feature-title">Quantum Velocity</h3>
+              <p class="feature-desc">Dedicated photon-processing units deliver operations in picoseconds, eliminating traditional input lag.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👁️</div>
+              <h3 class="feature-title">Spatial Awareness</h3>
+              <p class="feature-desc">Lidar-infused environment mapping understands room acoustics and lighting in real-time.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔒</div>
+              <h3 class="feature-title">Vault Security</h3>
+              <p class="feature-desc">Hardware-level encryption keys ensure your biometric data never leaves your device framework.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔋</div>
+              <h3 class="feature-title">Adaptive Power</h3>
+              <p class="feature-desc">AI-driven power allocation shuts down idle neural clusters to extend battery life by up to 40%.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ECOSYSTEM HIGHLIGHT -->
+      <section class="ecosystem-section" id="ecosystem">
+        <div class="section-container">
+          <div class="eco-card">
+            <div class="eco-content">
+              <span class="section-tag">Unified Kernel</span>
+              <h2 class="eco-title">One Architecture.<br/>Total Control.</h2>
+              <p class="eco-text">
+                Every TechSphere hardware module syncs via latency-free sub-millisecond local telemetry. Dynamic workload offloading keeps your devices running at peak optimization without touching the cloud.
+              </p>
+              <ul class="eco-list">
+                <li><span>&bull;</span> Neural Audio Active ANC &amp; Spatial Tracking</li>
+                <li><span>&bull;</span> 120Hz Micro-OLED Dual Engine Arrays</li>
+                <li><span>&bull;</span> Quantum-Secured On-Device Encryption</li>
+              </ul>
+            </div>
+            <div class="eco-visual">
+              <div class="glowing-ring">
+                <div class="glowing-core"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TECH SPECS GRID -->
+      <section class="specs-section" id="specs">
+        <div class="section-container">
+          <span class="section-tag">Under the Hood</span>
+          <h2 class="section-title mb-48">System Specifications</h2>
+          <div class="specs-grid">
+            <div class="spec-group">
+              <h3>Processor Complex</h3>
+              <div class="spec-row">
+                <span class="spec-label">Core Architecture</span>
+                <span class="spec-value">TS-Silicon M4 Neural</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Machine Learning</span>
+                <span class="spec-value">32-Core Tensor Engine</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Bandwidth</span>
+                <span class="spec-value">800GB/s Unified Memory</span>
+              </div>
+            </div>
+            <div class="spec-group">
+              <h3>Connectivity</h3>
+              <div class="spec-row">
+                <span class="spec-label">Wireless</span>
+                <span class="spec-value">Wi-Fi 7 / Bluetooth 6.0</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Ultra-Wideband</span>
+                <span class="spec-value">TechSphere Connect U1</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Ports</span>
+                <span class="spec-value">2x Thunderbolt 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. MATERIALS & CRAFTSMANSHIP -->
+      <section class="materials-section" id="materials">
+        <div class="materials-bg">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80" alt="Macro detail of hardware materials" loading="lazy" />
+          <div class="overlay-gradient"></div>
+        </div>
+        <div class="section-container relative">
+          <div class="materials-content">
+            <span class="section-tag">Design Language</span>
+            <h2 class="section-title">Forged in Aerospace Titanium.</h2>
+            <p class="section-text">
+              We reject plastic. Every TechSphere device is CNC-machined from a single block of Grade 5 Titanium, ensuring unmatched thermal dissipation and a strength-to-weight ratio that feels virtually weightless in daily use.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. SOFTWARE LAYER -->
+      <section class="software-section" id="software">
+        <div class="section-container split-layout reverse">
+          <div class="split-content">
+            <span class="section-tag">Software Layer</span>
+            <h2 class="section-title">SphereOS.<br/>The Intelligence.</h2>
+            <p class="section-text">
+              Hardware is only half the story. SphereOS is a lightweight, UNIX-based operating system designed entirely around spatial computing. It learns your habits securely on-device, pre-loading applications milliseconds before you request them.
+            </p>
+          </div>
+          <div class="split-visual">
+            <div class="software-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="mockup-body">
+                <pre><code>> INIT SPHERE_OS v4.2.1
+> LOADING NEURAL KERNEL... [OK]
+> ESTABLISHING SYNC... [OK]
+> 
+> SYSTEM STATUS: OPTIMAL
+> SPATIAL MAPPING: ACTIVE
+> BATTERY: 98%</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. SUSTAINABILITY -->
+      <section class="sustainability-section" id="sustainability">
+        <div class="section-container text-center">
+          <span class="section-tag">Our Planet</span>
+          <h2 class="section-title">Carbon Negative.<br/>Future Positive.</h2>
+          <p class="hero-subtitle mx-auto mt-4 mb-48">
+            Innovation shouldn't cost the Earth. We have completely overhauled our supply chain to ensure every product leaves the factory with a net-negative carbon footprint.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3 class="text-gradient">100%</h3>
+              <p>Recycled Aluminum</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="text-gradient">Zero</h3>
+              <p>Plastic Packaging</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="text-gradient">2030</h3>
+              <p>Complete Grid Neutrality</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. TESTIMONIALS -->
+      <section class="testimonials-section" id="testimonials">
+        <div class="section-container">
+          <span class="section-tag">The Community</span>
+          <h2 class="section-title mb-48">What Visionaries Say</h2>
+          
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p class="quote">"TechSphere hasn't just built a new headset; they've completely rewritten the rules of human-computer interaction."</p>
+              <div class="author">
+                <strong>Elena Rostova</strong>
+                <span>Lead Tech Analyst, Wired</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"The sub-millisecond latency on the Neural Pods is indistinguishable from analog studio monitors. Pure magic."</p>
+              <div class="author">
+                <strong>Marcus Chen</strong>
+                <span>Grammy-Winning Producer</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="quote">"SphereOS is the cleanest, most intuitive interface I've used in a decade. It literally predicts my workflow."</p>
+              <div class="author">
+                <strong>Sarah Jenkins</strong>
+                <span>Senior UX Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. FAQ SECTION -->
+      <section class="faq-section" id="faq">
+        <div class="section-container split-layout">
+          <div class="split-content">
+            <span class="section-tag">Support</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-text">Got questions about compatibility, shipping, or our technology? Find your answers here or reach out to our dedicated concierge team.</p>
+          </div>
+          <div class="split-visual">
+            <div class="faq-accordion" id="faq-accordion">
+              <div class="faq-item">
+                <button class="faq-question">What devices are compatible with TechSphere hardware?</button>
+                <div class="faq-answer"><p>Our hardware utilizes SphereOS which syncs perfectly across iOS, Android, macOS, and Windows via our dedicated companion application, ensuring a seamless bridge regardless of your primary device.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Do you ship internationally?</button>
+                <div class="faq-answer"><p>Yes, we ship to over 140 countries worldwide. All international orders include duties and taxes pre-calculated at checkout, so there are no surprise fees upon delivery.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">How does the 30-day trial work?</button>
+                <div class="faq-answer"><p>We give you 30 days to test the hardware in your own environment. If it doesn't revolutionize your workflow, return it in original condition for a full refund. We even cover the return shipping.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Is the data collected by the neural processors secure?</button>
+                <div class="faq-answer"><p>Absolutely. All processing occurs locally on the TS-Silicon M4 Neural chip. Your biometric data is encrypted at the hardware level and never transmitted to our servers or the cloud.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. CALL TO ACTION / NEWSLETTER -->
+      <section class="cta-section" id="cta">
+        <div class="section-container text-center">
+          <h2 class="section-title">Step into the TechSphere.</h2>
+          <p class="hero-subtitle mx-auto mt-4 mb-32">
+            Join the waitlist for exclusive early access to our next-generation product drops and SphereOS beta invites.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the TechSphere.');">
+            <input type="email" placeholder="Enter your email address" required class="input-field" />
+            <button type="submit" class="btn btn-pill-primary">Join the Future</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Slide-over Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Shopping Bag (<span id="cart-count-title">0</span>)</h3>
+        <button class="cart-close" id="cart-close" aria-label="Close Cart">&times;</button>
+      </div>
+
+      <div class="cart-body" id="cart-items">
+        <!-- Dynamically Rendered Cart Items -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal" id="cart-subtotal">$0.00</span>
+        </div>
+        <p class="cart-tax-note">Shipping &amp; Taxes calculated at checkout.</p>
+        <button class="btn btn-pill-primary btn-full" id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-container footer-content">
+        <div class="footer-brand">
+          <span class="brand-name">TECHSPHERE</span>
+          <p>&copy; 2026 TechSphere Systems Inc. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security Infrastructure</a>
+          <a href="#">Press Kit</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
